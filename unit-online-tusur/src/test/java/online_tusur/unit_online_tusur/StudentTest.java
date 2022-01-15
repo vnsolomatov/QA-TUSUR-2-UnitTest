@@ -24,7 +24,7 @@ public class StudentTest {
 	  @Test 												//позитивный тест для метода setAge(int age) класса Student
 	  @Tag("positive")
 	  public void posiTestSetAge() { 
-		  for (int age = 10; age < 100; age++) {					//фактический возраст студента в диапазоне [10, 99] 
+		  for (int age = 18; age < 50; age++) {					                                //фактический возраст студента в диапазоне [18, 49] 
 			  s.setAge(age);			 							//записанный возраст студента
 			  assertEquals(age > 17 && age < 50 ? age : 18, s.getAge()); 
 		  }
