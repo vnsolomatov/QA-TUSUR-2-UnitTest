@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [unit-online-tusur by groups]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="GRP-negative,positive(failed)">
+    <groups>
+      <run>
+        <include name="negative"/>
+        <include name="positive"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="online_tusur.unit_online_tusur.StudentTestNG">
+        <methods>
+          <include name="test_Name_P" invocation-numbers="0 1 2 3"/>
+          <include name="test_FullName_P" invocation-numbers="0 1 2 3"/>
+          <include name="a_test_pow"/>
+          <include name="test_Name_N" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10"/>
+          <include name="test_Age_P" invocation-numbers="0 1 2 3 4"/>
+          <include name="test_FullName_N" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10"/>
+        </methods>
+      </class> <!-- online_tusur.unit_online_tusur.StudentTestNG -->
+    </classes>
+  </test> <!-- GRP-negative,positive(failed) -->
+</suite> <!-- Failed suite [unit-online-tusur by groups] -->
